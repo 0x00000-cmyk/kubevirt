@@ -1,9 +1,0 @@
-apiVersion: snapshot.kubevirt.io/{{ .Version }}
-kind: VirtualMachineSnapshot
-metadata:
-  name: {{ .Name }}
-spec:
-  source:
-    apiGroup: kubevirt.io
-    kind: VirtualMachine
-    name: {{ .VMName }}
